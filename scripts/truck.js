@@ -25,6 +25,11 @@
         }.bind(this));
     };
 
+    Truck.prototype.getAllTruck = function() {
+        var customer = Object.keys(this.db.getAll());
+        return customer;
+    };
+
     App.Truck = Truck;
     window.App = App;
 })(window);
